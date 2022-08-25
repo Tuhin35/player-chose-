@@ -12,24 +12,26 @@
 <body>
 
     <header>
-        <div class="flex grid-cols-12 gap-3 bg-black ">
-
-            <div class="grid   mr-36">
-                <img class="" style="height: 400px; max-width: 80vh !important;" src="images/cover.png" alt="">
-
+        <section class="bg-black flex xl:flex-row md:flex-row flex-col-reverse justify-between">
+            <img class="xl:w-11/12 md:w-4/12 md:flex md:self-end md:h-3/5 md:mb-0.5" src="images/cover.png" alt="">
+            <div class="my-auto md:mr-12">
+                <h6
+                    class="xl:text-7xl text-blue-700 md:text-4xl text-4xl mt-12 px-6 md:mt-12 font-bold text-center header-text align-middle v items-center">
+                    Pick
+                    Five Best
+                    PSG<br>
+                    Players Of Your Choice</h6>
+                <img src="" alt="">
+                
+                <p class="text-center md:mb-12 px-4 text-white xl:text-2xl md:text-1xl mt-2">Paris Saint-Germain
+                    Football Club, commonly referred to as Paris Saint-Germain, Paris, Paris SG or simply PSG is a
+                    professional football club based in Paris, France. They compete in Ligue 1, the top division of
+                    French football.</p>
             </div>
-
-            <div class="grid  ">
-
-                <h1 class="flex text-xl text-center align-center justify-center text-stone-200">select your Pleayer
-                </h1>
-
-
-            </div>
-            <div>
-
-
+            
+        </section>
     </header>
+
 
 
     <main>
@@ -148,7 +150,8 @@
                 <div class="lg:col-span-4 mt-5 md:mt-0 ">
 
                     <div class=" bg-black text-center my-3 py-3">
-                        <p class="text-3xl text-white flex justify-center">Select - <span id="Total-added-player" class="text-blue-700">0</span></p>
+                        <p class="text-3xl text-white flex justify-center">Select - <span id="Total-added-player"
+                                class="text-blue-700">0</span></p>
                         <hr class="w-3/4 mx-auto  my-2">
 
                         <div class="overflow-x-auto">
@@ -179,7 +182,8 @@
                         <p class="flex text-white justify-between mt-4 px-2">Per Player:
                             <input type="text" class="w-2/4 text-black p-1" id="players" placeholder="player amount" />
                         </p>
-                        <button id="Per-player" class="bg-blue-800 py-2 px-3 w-11/12 mt-7 hover:bg-slate-300 rounded">Calculate</button>
+                        <button id="Per-player"
+                            class="bg-blue-800 py-2 px-3 w-11/12 mt-7 hover:bg-slate-300 rounded">Calculate</button>
 
 
                         <p class="flex text-white justify-between mt-4 px-2">Player cost <span
@@ -192,10 +196,11 @@
                         <p class="flex text-white justify-between mt-4 px-2">coach :
                             <input type="text" class="w-2/4 text-black p-1" id="coach" placeholder="Coach amount" />
                         </p>
-                        <button id="Total-btn" class="bg-blue-800 py-2 px-3 w-11/12 mt-7 hover:bg-slate-300 rounded">Calculate
+                        <button id="Total-btn"
+                            class="bg-blue-800 py-2 px-3 w-11/12 mt-7 hover:bg-slate-300 rounded">Calculate
                             Total</button>
-                        <p class="flex text-white justify-between mt-4 px-2">Total cost <span
-                                class="justify-end">$<span id="total-team-cost">0</span></span> </p>
+                        <p class="flex text-white justify-between mt-4 px-2">Total cost <span class="justify-end">$<span
+                                    id="total-team-cost">0</span></span> </p>
 
                     </div>
                 </div>
