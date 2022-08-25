@@ -30,10 +30,11 @@ function display(array){
    if (array.length<=5) {
     count++;
     tableBody.innerHTML = ""
+   
     for (let i = 0; i < array.length; i++) {
         
        
-      
+        const  selected = event.target.setAttribute("disabled" ,"");
         // console.log(cartArray[i].productName , cartArray[i].priceMuch);
        if (array.length <= 5) {
         const name = cartArray[i].playerName ;
@@ -50,7 +51,8 @@ function display(array){
       `
       tableBody.appendChild(tr);
       
-      console.log(count);
+      
+     
        }
 
        
@@ -63,7 +65,7 @@ function display(array){
    else{
       
         alert("you already select 5")
-       
+        const  selected = array.target.removeAttribute("disabled");
        }
     
     }
